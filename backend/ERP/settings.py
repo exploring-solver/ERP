@@ -74,9 +74,17 @@ WSGI_APPLICATION = 'ERP.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+      'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    },
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'hello_world',
+        'USER': 'hello_world',
+        'PASSWORD': 'rKKEGXGHtaeK8Mdb',
+        'HOST': 'panel.mait.ac.in',
+        'PORT': '888'
     }
 }
 
